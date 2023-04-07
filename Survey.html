@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="Survey.css">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<h1>For You Clothing Survey</h1>
+	</header>
+	<nav>
+				<ul>
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Products.html">Products</a></li>
+					<li><a href="Survey.html">Survey</a></li>
+				</ul>
+    </nav>
+	<main>
+		<section id="section1">
+			<h2>Style</h2>
+			<p>Describe your current style: </p>
+			<input type="text" name="question1" required>
+			<br>
+			<button><a href="#section2">Next</a></button>
+		</section>
+		<section id="section2">
+			<h2>Preference</h2>
+			<p>What type of clothing are you looking for: </p>
+			<input type="radio" name="question2" value="option1" required> Male
+			<br>
+			<input type="radio" name="question2" value="option2" required> Female
+			<br>
+			<button><a href="#section1">Previous</a></button>
+			<button><a href="#section3">Next</a></button>
+		</section>
+		<section id="section3">
+			<h2>Event</h2>
+			<p>What's the dresscode for your event: </p>
+			<input type="checkbox" name="question3[]" value="option1" required> Casual
+			<br>
+			<input type="checkbox" name="question3[]" value="option2" required> Cocktail
+			<br>
+			<input type="checkbox" name="question3[]" value="option3" required> Formal
+			<br>
+			<button><a href="#section2">Previous</a></button>
+			<button type="submit">Next</button>
+		</section>
+    <section>
+        <h2>Category</h2>
+        <label for="input3">Where would you like to start?</label>
+        <select id="input3" name="rating" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="1">Tops</option>
+          <option value="2">Bottoms</option>
+          <option value="3">Dresses</option>
+          <option value="4">Sets</option>
+          <option value="5">Accessories</option>
+        </select>
+      <br>
+      <button><a href="#section2">Previous</a></button>
+			<button type="submit">Submit</button>
+      </section>
+	</main>
+	<footer>
+		<p>&copy; 2023 For You Clothing Personalized Survey</p>
+	</footer>
+</body>
+</html>
