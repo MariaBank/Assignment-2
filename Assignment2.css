@@ -1,4 +1,4 @@
-<--HomePage-->
+<!--HomePage-->
 
 * {
 	box-sizing: border-box;
@@ -201,7 +201,8 @@ nav1 ul li a {
 }
 
 .hero1 {
-	margin-top: 2rem;
+	margin-top: 10rem;
+	height: 600px;
 }
 
 .hero1 h1 {
