@@ -1,4 +1,34 @@
-<!--HomePage-->
+/* 
+	Just so you know, CSS comments are
+	made inside of different symbols than
+	HTML comments. I have included this 
+	comment inside the appropriate symbols
+	for your reference!
+*/
+
+/* 
+	1. A big reason your rules weren't working was that you didn't
+	put a period in front of any of your classes after the ones you
+	assigned to the Home Page. Remember, "." means class, "#" means ID. 
+	You can only use no symbols before your command line when calling a 
+	certain tag.
+
+	2. Having different nav bar settings is very odd. You will want your
+	navigation bar to look the same on every screen. This means that you
+	should only have to call "nav" one time outside of media queries. Having
+	too many classes / not making use of enough universal rules may be what is
+	making your site look "not lined up" as you say. Remember - just because the 
+	text is different on the page (title of the nav bar) doesn't mean you need
+	different formatting rules. 
+	
+	As in science, (computer science counts too!) the most parsimonious answer is the best answer.
+
+	3. Finally, you need to add some media queries and make your pages responsive!
+
+	You can do it! Even if you don't feel it, you've come a long way since you started! Keep it up.
+*/
+
+/* HomePage */
 
 * {
 	box-sizing: border-box;
@@ -134,8 +164,8 @@ nav ul li a:hover {
 
 .feature-box img {
 	margin-bottom: 20px;
-  width: 150px;
-  height: 150px;
+	width: 150px;
+	height: 150px;
 }
 
 .feature-box h4 {
@@ -155,6 +185,7 @@ nav ul li a:hover {
 .products {
 	padding: -15px 0;
 }
+
 .products h3 {
 	font-size: 32px;
 	font-weight: 700;
@@ -162,6 +193,7 @@ nav ul li a:hover {
 	margin-bottom: 10px;
 	text-align: left;
 }
+
 footer {
   background-color: #333;
   color: #fff;
@@ -195,16 +227,9 @@ footer ul li a:hover {
   color: #ea4c88;
 }
 
-<!--ProductPage--> 
+/* Product Page */ 
 
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body2 {
+.body2 {
 	font-family: 'Segoe UI'sans-serif;
 	color: #333;
 	line-height: 1.5;
@@ -219,13 +244,13 @@ a:hover {
 	color: #666;
 }
 
-header2 {
+.header2 {
 	background-color: #F1DBB2;
 	padding: 2rem;
 	text-align: center;
 }
 
-nav2 ul {
+.nav2 ul {
 	list-style: none;
 	display: flex;
 	justify-content: center;
@@ -233,11 +258,11 @@ nav2 ul {
 	margin-bottom: 1rem;
 }
 
-nav2 ul li {
+.nav2 ul li {
 	margin: 0 1rem;
 }
 
-nav2 ul li a {
+.nav2 ul li a {
 	font-size: 1.2rem;
 	font-weight: bold;
 }
@@ -270,7 +295,7 @@ nav2 ul li a {
 	background-color: #666;
 }
 
-main2 {
+.main2 {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 2rem;
@@ -317,50 +342,50 @@ h2 {
 	margin-bottom: 0.5rem;
 }
 
-<!--SurveyPage-->
+/* SurveyPage */
 
-header3 {
+.header3 {
 	background-color: #F1DBB2;
 	color: #333;
 	padding: 20px;
 	text-align: center;
 }
 
-nav3 {
+.nav3 {
 	background-color: #444;
 	color: #fff;
 	padding: 10px;
 }
 
-nav3 ul {
+.nav3 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-nav3 li {
+.nav3 li {
 	display: inline;
 	margin-right: 20px;
 }
 
-nav3 li a {
+.nav3 li a {
 	color: #fff;
 	text-decoration: none;
 }
 
-main3 {
+.main3 {
 	margin: 20px;
 }
 
-section3 {
+.section3 {
 	margin-bottom: 20px;
 }
 
-section3 h2 {
+.section3 h2 {
 	margin-top: 0;
 }
 
-button3 {
+.button3 {
 	background-color: #444;
 	color: #fff;
 	padding: 10px 20px;
@@ -369,12 +394,12 @@ button3 {
 	margin-right: 10px;
 }
 
-button3 a {
+.button3 a {
 	color: #fff;
 	text-decoration: none;
 }
 
-button3:hover {
+.button3:hover {
 	background-color: #666;
 	cursor: pointer;
 }
