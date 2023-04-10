@@ -19,8 +19,8 @@ body {
 
 /* header styles */
 header {
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 20px;
 }
 
@@ -29,31 +29,54 @@ header h1 {
   font-size: 2.5rem;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Navbar */
+.navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #F1DBB2;
+  border-bottom: 1px solid #dee2e6;
 }
 
-nav li {
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links li {
   margin-right: 20px;
+  list-style: none;
 }
 
-nav a {
-  color: white;
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
   text-decoration: none;
-  transition: all 0.2s;
+  color: #212529;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
-  color: #f0ad4e;
+.nav-links a:hover {
+  color: #007bff;
 }
 
-/* section.Title styles */
+
+/* Title */
 .Title {
   background-color: #F1DBB2;
-  color: white;
+  color: dimgrey;
   padding: 60px 20px;
   text-align: center;
 }
@@ -90,6 +113,7 @@ nav a:hover {
 
 .features h3 {
   font-size: 2.5rem;
+color: black;
 }
 
 .feature-box {
@@ -104,11 +128,13 @@ nav a:hover {
 .feature-box h4 {
   font-size: 1.5rem;
   margin-top: 20px;
+    color: black;
 }
 
 .feature-box p {
   font-size: 1.2rem;
   margin-top: 10px;
+    color: black;
 }
 
 /* section.products styles */
@@ -119,6 +145,7 @@ nav a:hover {
 
 .products h3 {
   font-size: 2.5rem;
+    color: black;
 }
 
 .product-grid {
