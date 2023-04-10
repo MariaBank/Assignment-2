@@ -1,221 +1,193 @@
-/* 
-	Just so you know, CSS comments are
-	made inside of different symbols than
-	HTML comments. I have included this 
-	comment inside the appropriate symbols
-	for your reference!
-*/
-
-/* 
-	1. A big reason your rules weren't working was that you didn't
-	put a period in front of any of your classes after the ones you
-	assigned to the Home Page. Remember, "." means class, "#" means ID. 
-	You can only use no symbols before your command line when calling a 
-	certain tag.
-
-	2. Having different nav bar settings is very odd. You will want your
-	navigation bar to look the same on every screen. This means that you
-	should only have to call "nav" one time outside of media queries. Having
-	too many classes / not making use of enough universal rules may be what is
-	making your site look "not lined up" as you say. Remember - just because the 
-	text is different on the page (title of the nav bar) doesn't mean you need
-	different formatting rules. 
-	
-	As in science, (computer science counts too!) the most parsimonious answer is the best answer.
-
-	3. Finally, you need to add some media queries and make your pages responsive!
-
-	You can do it! Even if you don't feel it, you've come a long way since you started! Keep it up.
-*/
-
 /* HomePage */
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #333;
-	background-color: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* header styles */
 header {
-	background-color: #F1DBB2;
-	box-shadow: 0 2px 5px;
-	padding: 20px 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 999;
+  background-color: #333;
+  color: white;
+  padding: 20px;
 }
 
 header h1 {
-	float: left;
-	font-size: 28px;
-	font-weight: 700;
-	margin: 0;
-	padding: 0;
-}
-
-nav {
-	float: right;
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-nav ul li {
-	display: inline-block;
-	margin-left: 20px;
+nav li {
+  margin-right: 20px;
 }
 
-nav ul li a {
-	color: #333;
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 500;
-	transition: color 0.3s ease;
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-nav ul li a:hover {
-	color: #ea4c88;
+nav a:hover {
+  color: #f0ad4e;
 }
 
-.hero {
-	background-image: url('https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODA4MTk3NzI&ixlib=rb-4.0.3&q=80&w=400');
-	background-position: center;
-	background-size: cover;
-	height: 600px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/* section.Title styles */
+.Title {
+  background-color: #F1DBB2;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.hero h2 {
-	font-size: 42px;
-	font-weight: 700;
-	color: #F4D886;
-	margin-bottom: 20px;
-	text-align: center;
-	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+.Title h2 {
+  font-size: 3rem;
 }
 
-.hero p {
-	font-size: 24px;
-	font-weight: 500;
-	color: #F4D886;
-	margin-bottom: 30px;
-	text-align: center;
-	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+.Title p {
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 
-.btn {
-	display: inline-block;
-	padding: 10px 20px;
-	border-radius: 5px;
-	background-color: #ea4c88;
-	color: #fff;
-	font-size: 18px;
-	font-weight: 500;
-	text-decoration: none;
-	transition: background-color 0.3s ease;
+.pink-button {
+  background-color: hotpink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.btn:hover {
-	background-color: #ff6baf;
+.pink-button:hover {
+  background-color: #c9302c;
 }
 
+/* section.features styles */
 .features {
-	padding: 60px 0;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .features h3 {
-	font-size: 32px;
-	font-weight: 700;
-	color: #333;
-	margin-bottom: 40px;
-	text-align: center;
+  font-size: 2.5rem;
 }
 
 .feature-box {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 40px;
- 
+  margin-top: 40px;
 }
 
 .feature-box img {
-	margin-bottom: 20px;
-	width: 150px;
-	height: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
 .feature-box h4 {
-	font-size: 24px;
-	font-weight: 500;
-	color: #333;
-	margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 .feature-box p {
-	font-size: 18px;
-	font-weight: 400;
-	color: #666;
-	text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
+/* section.products styles */
 .products {
-	padding: -15px 0;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .products h3 {
-	font-size: 32px;
-	font-weight: 700;
-	color: #333;
-	margin-bottom: 10px;
-	text-align: left;
+  font-size: 2.5rem;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 40px;
 }
 
-footer p {
+.product {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.product img {
+  display: block;
+  margin: 0 auto;
+}
+
+.product h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.product p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.product button {
+  background-color: hotpink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.product button:hover {
+  background-color: #c9302c;
+}
+
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+.footer p {
   margin: 0;
 }
 
-footer ul {
+.footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-footer ul li {
+.footer ul li {
   display: inline-block;
   margin-left: 20px;
 }
 
-footer ul li a {
+.footer ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -223,7 +195,7 @@ footer ul li a {
   transition: color 0.3s ease;
 }
 
-footer ul li a:hover {
+.footer ul li a:hover {
   color: #ea4c88;
 }
 
@@ -235,50 +207,26 @@ footer ul li a:hover {
 	line-height: 1.5;
 }
 
-a {
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.a {
 	color: #333;
 	text-decoration: none;
 }
 
-a:hover {
+.a:hover {
 	color: #666;
-}
-
-.header2 {
-	background-color: #F1DBB2;
-	padding: 2rem;
-	text-align: center;
-}
-
-.nav2 ul {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 1rem;
-}
-
-.nav2 ul li {
-	margin: 0 1rem;
-}
-
-.nav2 ul li a {
-	font-size: 1.2rem;
-	font-weight: bold;
 }
 
 .hero2 {
 	margin-top: 2rem;
-}
-
-.hero2 h1 {
-	font-size: 3rem;
+	font-size: 1rem;
 	margin-bottom: 1rem;
-}
-
-.hero2 p {
-	font-size: 1.5rem;
-	margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .btn2 {
@@ -301,19 +249,13 @@ a:hover {
 	padding: 2rem;
 }
 
-section {
+.section {
 	margin: 2rem 0;
 }
 
-h2 {
+.h2 {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
-}
-
-.product-list {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 }
 
 .product {
@@ -328,7 +270,7 @@ h2 {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 1rem;
-	max-width: 100%;
+	max-width: 50%;
 }
 
 .product h3 {
@@ -344,86 +286,46 @@ h2 {
 
 /* SurveyPage */
 
-.header3 {
-	background-color: #F1DBB2;
-	color: #333;
-	padding: 20px;
-	text-align: center;
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
 
-.nav3 {
-	background-color: #444;
-	color: #fff;
-	padding: 10px;
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
 }
 
-.nav3 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.nav3 li {
-	display: inline;
-	margin-right: 20px;
-}
-
-.nav3 li a {
-	color: #fff;
-	text-decoration: none;
-}
-
-.main3 {
-	margin: 20px;
-}
-
-.section3 {
-	margin-bottom: 20px;
-}
-
-.section3 h2 {
-	margin-top: 0;
-}
-
+button[type="submit"],
 .button3 {
-	background-color: #444;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	margin-right: 10px;
+  background-color: #333;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .button3 a {
-	color: #fff;
-	text-decoration: none;
+  color: #FFF;
+  text-decoration: none;
 }
 
+button[type="submit"]:hover,
 .button3:hover {
-	background-color: #666;
-	cursor: pointer;
+  background-color: #555;
 }
 
-[type="radio"], [type="checkbox"] {
-	margin-right: 10px;
-}
-
-    @media screen and (max-width: 767px) {
-	nav ul {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	nav ul li {
-		margin: 1rem 0;
-	}
-
-	.product-list {
-		flex-direction: column;
-	}
-
-	.product {
-		flex-basis: 100%;
-	}
+@media (max-width: 600px) {
+  nav li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }
 
